@@ -42,6 +42,7 @@ function Header() {
         <div className="text-white text-xl font-bold flex items-center">
           CELEBES ESSENCE<span className="text-orange-500 ml-1">🌱</span>
         </div>
+        
 
         {/* Navigation for Desktop */}
         <nav className="hidden md:flex space-x-10">
