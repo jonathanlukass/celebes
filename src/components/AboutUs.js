@@ -9,7 +9,7 @@ function AboutUs() {
       <div className="max-w-screen-2xl mx-auto">
         {/* Header Section */}
           <div className="text-center mb-10 mt-4">
-            <button className="text-[#FF7F00] font-bold text-sm mb-4 inline-block">
+            <button className="text-[#ffb300] font-bold text-sm mb-4 inline-block">
               ABOUT US
             </button>
             <h1 className="text-2xl font-bold text-gray-800 mt-2">
