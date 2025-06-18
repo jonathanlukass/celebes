@@ -27,12 +27,12 @@ function Contact() {
           <address className="not-italic text-[#919191] font-thin text-sm mb-2">
             {address}
           </address>
-          <a
+          <p
             href={`tel:${phone.replace(/\s+/g, '')}`}
             className="text-[#FCD200] block mt-1 text-sm hover:underline"
           >
             {phone}
-          </a>
+          </p>
         </div>
 
         <div className="">
@@ -42,7 +42,7 @@ function Contact() {
               <li key={item}>
                 <a
                   href={`#${item.toLowerCase()}`}
-                  className="hover:text-[#E46B2D] transition-colors duration-200"
+                  className="hover:text-[#ffb300] transition-colors duration-200"
                 >
                   {item}
                 </a>
@@ -60,7 +60,7 @@ function Contact() {
               rel="noopener noreferrer"
               aria-label="Instagram"
             >
-              <div className="p-2 rounded-full border border-white inline-block hover:bg-white transition-colors duration-200 group">
+              <div className="p-2 rounded-full border border-white inline-block group">
                 <img
                   src={instagramIcon}
                   alt="Instagram"
@@ -74,7 +74,7 @@ function Contact() {
               rel="noopener noreferrer"
               aria-label="Facebook"
             >
-              <div className="p-2 rounded-full border border-white inline-block hover:bg-white transition-colors duration-200 group">
+              <div className="p-2 rounded-full border border-white inline-block group">
                 <img
                   src={facebookIcon}
                   alt="Facebook"
