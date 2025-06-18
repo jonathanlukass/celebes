@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 function Header() {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [showHeader, setShowHeader] = useState(true);
+  const [atTop, setAtTop] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -9,17 +10,13 @@ function Header() {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
 
-      // Visible with transparent bg at top
-      if (currentScrollPos === 0) {
-        setIsScrolled(false);
-      }
-      // Hide on scroll down
-      else if (currentScrollPos > prevScrollPos) {
-        setIsScrolled(false); // Hide header
-      }
-      // Show with black bg on scroll up
-      else if (currentScrollPos < prevScrollPos) {
-        setIsScrolled(true); // Show header with black bg
+      // Check if at top
+      setAtTop(currentScrollPos === 0);
+
+      if (currentScrollPos > prevScrollPos) {
+        setShowHeader(false); // scrolling down
+      } else if (currentScrollPos < prevScrollPos) {
+        setShowHeader(true); // scrolling up
       }
 
       setPrevScrollPos(currentScrollPos);
@@ -32,11 +29,9 @@ function Header() {
   return (
     <header
       className={`fixed w-full z-50 transition-all duration-300 ease-in-out ${
-        isScrolled
-          ? 'bg-black opacity-100 translate-y-0'
-          : 'bg-transparent opacity-100 translate-y-0'
-      } ${!isScrolled && prevScrollPos > 0 ? '-translate-y-full opacity-0' : ''}`}
-      style={{ transitionProperty: 'opacity, transform, background-color' }}
+        showHeader ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
+      } ${atTop ? 'bg-transparent' : 'bg-black'}`}
+      style={{ transitionProperty: 'transform, opacity, background-color' }}
     >
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         {/* Logo */}
@@ -61,8 +56,8 @@ function Header() {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="text-white focus:outline-none"
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
             </svg>
           </button>
         </div>

@@ -7,9 +7,7 @@ function AboutUs() {
   return (
     <section
       className="flex flex-col items-center justify-center min-h-screen bg-gray-50 p-6"
-      style={{
-        backgroundImage: 'url(https://www.transparenttextures.com/patterns/rice-paper.png)',
-      }}
+
     >
       <div className="text-center mb-10">
         <button className="text-orange-500 font-bold text-sm mb-4 inline-block">
@@ -55,8 +53,7 @@ function AboutUs() {
               </div>
             </div>
 
-            {/* Decorative Corner */}
-            <div className="absolute top-0 right-0 w-10 h-10 border-l-2 border-b-2 border-white transform rotate-45" />
+
           </div>
         ))}
       </div>

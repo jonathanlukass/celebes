@@ -4,8 +4,8 @@
 
 .about {
   height: 100vh;
-  background: url('/public/About.jpeg') no-repeat center center/cover;
-  /* Replace with actual background image */
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/public/About.jpeg') no-repeat center center/cover;
+  /* 40% brightness overlay */
   color: white;
   display: flex;
   flex-direction: column;
