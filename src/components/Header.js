@@ -1,37 +1,42 @@
 import React, { useState, useEffect } from 'react';
 
 function Header() {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [showHeader, setShowHeader] = useState(true);
+  const [atTop, setAtTop] = useState(true);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    let lastScroll = 0;
     const handleScroll = () => {
-      const currentScroll = window.pageYOffset;
-      if (currentScroll === 0) {
-        setIsScrolled(false); // Transparent at top
-      } else if (currentScroll > lastScroll) {
-        setIsScrolled(false); // Hide on scroll down
-      } else {
-        setIsScrolled(true); // Show with black bg on scroll up
+      const currentScrollPos = window.pageYOffset;
+
+      // Check if at top
+      setAtTop(currentScrollPos === 0);
+
+      if (currentScrollPos > prevScrollPos) {
+        setShowHeader(false); // scrolling down
+      } else if (currentScrollPos < prevScrollPos) {
+        setShowHeader(true); // scrolling up
       }
-      lastScroll = currentScroll;
+
+      setPrevScrollPos(currentScrollPos);
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [prevScrollPos]);
 
   return (
     <header
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-black' : 'bg-transparent'
-      } ${isScrolled ? 'opacity-100' : 'opacity-100'}`}
+      className={`fixed w-full z-50 transition-all duration-300 ease-in-out ${
+        showHeader ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
+      } ${atTop ? 'bg-transparent' : 'bg-black'}`}
+      style={{ transitionProperty: 'transform, opacity, background-color' }}
     >
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         {/* Logo */}
         <div className="text-white text-xl font-bold flex items-center">
-          webeksport<span className="text-orange-500 ml-1">🌱</span>
+          CELEBES ESSENCE<span className="text-orange-500 ml-1">🌱</span>
         </div>
 
         {/* Navigation for Desktop */}
@@ -51,8 +56,8 @@ function Header() {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="text-white focus:outline-none"
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
             </svg>
           </button>
         </div>
