@@ -1,8 +1,14 @@
 import React, { useState } from 'react';
-import pala from '../assets/pala.jpeg';
+import pala1 from '../assets/pala.jpeg';
+import pala2 from '../assets/pala2.png';
+import pala3 from '../assets/pala3.png';
+
+
 
 function AboutUs() {
   const [isHovered, setIsHovered] = useState(null);
+
+  const palaImages = [pala1, pala2, pala3];
 
   return (
     <section className="w-full px-10" id="about">
@@ -20,7 +26,6 @@ function AboutUs() {
             </p>
           </div>
 
- 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
             "Rempah Sulawesi untuk Dunia – Inilah Celebes Essence",
@@ -37,7 +42,7 @@ function AboutUs() {
               <div
                 className="absolute top-0 left-0 w-full h-full bg-cover bg-center transition-transform duration-300"
                 style={{
-                  backgroundImage: `url(${pala})`,
+                  backgroundImage: `url(${palaImages[index]})`,
                   filter: 'brightness(40%)',
                   transform: isHovered === index ? 'scale(1.1)' : 'scale(1)',
                 }}

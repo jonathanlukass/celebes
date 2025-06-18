@@ -49,7 +49,7 @@ function Header() {
           <a href="#about" className="text-white hover:text-gray-300">About</a>
           <a href="#products" className="text-white hover:text-gray-300">Products</a>
           <a href="#contact" className="text-white hover:text-gray-300">Contact</a>
-          <a href="tel:+6281280080275" className="text-yellow-300 hover:text-yellow-100">celebes@gmail.com</a>
+          <a href="tel:+6281280080275" className="text-yellow-300 font-bold hover:text-yellow-100">celebes@gmail.com</a>
         </nav>
 
         {/* Burger Menu for Mobile */}

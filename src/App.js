@@ -5,6 +5,7 @@ import About from './components/About';
 import AboutUs from './components/AboutUs';
 import Products from './components/Products';
 import Contact from './components/Contact';
+import WhatsAppButton from './components/WhatsAppButton';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <AboutUs />
       <Products />
       <Contact />
+      <WhatsAppButton />
     </div>
   );
 }
