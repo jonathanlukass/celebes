@@ -5,22 +5,22 @@ function AboutUs() {
   const [isHovered, setIsHovered] = useState(null);
 
   return (
-    <section className="w-full px-6">
+    <section className="w-full px-20">
       <div className="max-w-screen-2xl mx-auto">
         {/* Header Section */}
-        <div className="text-center mb-10">
-          <button className="text-orange-500 font-bold text-sm mb-4 inline-block">
-            ABOUT US
-          </button>
-          <h1 className="text-4xl font-bold text-gray-800 mt-2">
-            Menghadirkan Kualitas Pala Premium dari Sulawesi ke Dunia
-          </h1>
-          <p className="text-gray-600 mt-4 text-justify">
-            Celebes Essence adalah perusahaan yang bergerak di bidang pengolahan dan distribusi pala yang berasal dari tanah subur Sulawesi, Indonesia. Kami hadir sebagai pelaku usaha yang mengedepankan kualitas, keberlanjutan, dan kepercayaan, baik dalam proses produksi maupun dalam menjalin hubungan dengan mitra dan konsumen. Dengan memanfaatkan potensi alam Indonesia dan dukungan petani lokal, Celebes Essence berkomitmen untuk menghasilkan produk pala yang tidak hanya unggul dari segi rasa dan aroma, tetapi juga memenuhi standar internasional.
-          </p>
-        </div>
+          <div className="text-center mb-10 mt-4">
+            <button className="text-[#FF7F00] font-bold text-sm mb-4 inline-block">
+              ABOUT US
+            </button>
+            <h1 className="text-2xl font-bold text-gray-800 mt-2">
+              Menghadirkan Kualitas Pala Premium dari Sulawesi ke Dunia
+            </h1>
+            <p className="text-gray-600 mt-4 text-justify">
+              Celebes Essence adalah perusahaan yang bergerak di bidang pengolahan dan distribusi pala yang berasal dari tanah subur Sulawesi, Indonesia. Kami hadir sebagai pelaku usaha yang mengedepankan kualitas, keberlanjutan, dan kepercayaan, baik dalam proses produksi maupun dalam menjalin hubungan dengan mitra dan konsumen. Dengan memanfaatkan potensi alam Indonesia dan dukungan petani lokal, Celebes Essence berkomitmen untuk menghasilkan produk pala yang tidak hanya unggul dari segi rasa dan aroma, tetapi juga memenuhi standar internasional.
+            </p>
+          </div>
 
-        {/* Card Section */}
+ 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
             "Rempah Sulawesi untuk Dunia – Inilah Celebes Essence",

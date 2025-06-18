@@ -4,7 +4,7 @@
 
 .about {
   height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/public/About.jpeg') no-repeat center center/cover;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/public/About.jpeg') no-repeat center center/cover;
   /* 40% brightness overlay */
   color: white;
   display: flex;
@@ -20,9 +20,11 @@
 .about h1 {
   font-size: 3em;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .about h1 span {
-  color: #007bff;
+  color: #ffb300;
   font-style: italic;
+  font-weight: bold;
 }
