@@ -28,11 +28,15 @@ function Header() {
 
   return (
     <header
-      className={`fixed w-full z-50 transition-all duration-300 ease-in-out ${
+    className={`fixed w-full z-50 transition-all duration-300 ease-in-out ${
         showHeader ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
-      } ${atTop ? 'bg-transparent' : 'bg-black'}`}
-      style={{ transitionProperty: 'transform, opacity, background-color' }}
+    } ${atTop ? 'bg-transparent' : ''}`}
+    style={{
+        transitionProperty: 'transform, opacity, background-color',
+        backgroundColor: atTop ? 'transparent' : '#0c1c01'
+    }}
     >
+
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         {/* Logo */}
         <div className="text-white text-xl font-bold flex items-center">
@@ -40,7 +44,7 @@ function Header() {
         </div>
 
         {/* Navigation for Desktop */}
-        <nav className="hidden md:flex space-x-6">
+        <nav className="hidden md:flex space-x-10">
           <a href="#home" className="text-white hover:text-gray-300">Home</a>
           <a href="#about" className="text-white hover:text-gray-300">About</a>
           <a href="#products" className="text-white hover:text-gray-300">Products</a>
