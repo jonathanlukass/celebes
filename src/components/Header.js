@@ -40,7 +40,7 @@ function Header() {
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         {/* Logo */}
         <div className="text-white text-xl font-bold flex items-center">
-          webeksport<span className="text-orange-500 ml-1">🌱</span>
+          CELEBES ESSENCE<span className="text-orange-500 ml-1">🌱</span>
         </div>
 
         {/* Navigation for Desktop */}
