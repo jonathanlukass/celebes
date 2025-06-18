@@ -33,11 +33,11 @@ function Header() {
     } ${atTop ? 'bg-transparent' : ''}`}
     style={{
         transitionProperty: 'transform, opacity, background-color',
-        backgroundColor: atTop ? 'transparent' : '#0c1c01'
+        backgroundColor: atTop ? 'transparent' : '#0a1801'
     }}
     >
 
-      <div className="container mx-auto px-20 py-4 flex justify-between items-center">
+      <div className="container mx-auto px-10 py-8 flex justify-between items-center">
         {/* Logo */}
         <div className="text-white text-xl font-bold flex items-center">
           CELEBES ESSENCE<span className="text-orange-500 ml-1">🌱</span>

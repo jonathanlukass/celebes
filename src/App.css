@@ -4,7 +4,7 @@
 
 .about {
   height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/public/About.jpeg') no-repeat center center/cover;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/public/About.jpg') no-repeat center center/cover;
   /* 40% brightness overlay */
   color: white;
   display: flex;
@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   position: relative;
   z-index: 0;
 }
@@ -28,3 +28,79 @@
   font-style: italic;
   font-weight: bold;
 }
+
+.about p {
+  font-size: 1.2em;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+
+
+.carousel-container {
+  position: relative;
+  flex: 2 1 400px;
+  min-width: 300px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card .relative {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.2em;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.carousel-button.left {
+  left: -10px;
+}
+
+.carousel-button.right {
+  right: -10px;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+

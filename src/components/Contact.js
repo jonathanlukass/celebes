@@ -10,7 +10,7 @@ function Contact() {
   const currentYear = '2025';
 
   return (
-    <section className="contact bg-[#191A17] py-10 px-4 md:px-8 lg:px-16 ">
+    <section className="contact bg-[#0a1801] py-10 px-4 md:px-8 lg:px-16 ">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
         <div className="lg:col-span-2">
           <p className="text-white text-3xl font-thin mb-2 whitespace-nowrap">
@@ -60,7 +60,7 @@ function Contact() {
               rel="noopener noreferrer"
               aria-label="Instagram"
             >
-              <div className="p-2 rounded-full border border-white inline-block hover:bg-white transition-colors duration-200 group">
+              <div className="p-2 rounded-full border border-white inline-block hover:bg-black transition-colors duration-200 group">
                 <img
                   src={instagramIcon}
                   alt="Instagram"
@@ -74,7 +74,7 @@ function Contact() {
               rel="noopener noreferrer"
               aria-label="Facebook"
             >
-              <div className="p-2 rounded-full border border-white inline-block hover:bg-white transition-colors duration-200 group">
+              <div className="p-2 rounded-full border border-white inline-block hover:bg-black transition-colors duration-200 group">
                 <img
                   src={facebookIcon}
                   alt="Facebook"
