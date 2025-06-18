@@ -11,10 +11,10 @@ function Contact() {
 
   return (
     <section className="contact bg-[#191A17] py-10 px-4 md:px-8 lg:px-16 ">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div className="">
-          <p className="text-white text-3xl font-thin mb-2">
-            celebes <span className="font-bold">essence</span>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="lg:col-span-2">
+          <p className="text-white text-3xl font-thin mb-2 whitespace-nowrap">
+            Celebes<span className="font-bold">Essence🌱</span>
           </p>
           <p className="text-[#919191] font-thin text-sm leading-relaxed max-w-sm">
             Developing effective distribution channels is crucial for reaching
