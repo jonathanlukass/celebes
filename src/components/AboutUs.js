@@ -5,7 +5,7 @@ function AboutUs() {
   const [isHovered, setIsHovered] = useState(null);
 
   return (
-    <section className="w-full px-10">
+    <section className="w-full px-10" id="about">
       <div className="max-w-screen-2xl mx-auto">
 
           <div className="text-center mb-10 mt-4">

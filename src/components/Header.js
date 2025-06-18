@@ -48,8 +48,6 @@ function Header() {
           <a href="#home" className="text-white hover:text-gray-300">Home</a>
           <a href="#about" className="text-white hover:text-gray-300">About</a>
           <a href="#products" className="text-white hover:text-gray-300">Products</a>
-          <a href="#teams" className="text-white hover:text-gray-300">Teams</a>
-          <a href="#news" className="text-white hover:text-gray-300">News</a>
           <a href="#contact" className="text-white hover:text-gray-300">Contact</a>
           <a href="tel:+6281280080275" className="text-yellow-300 hover:text-yellow-100">+62 8128 008 0275</a>
         </nav>

@@ -2,7 +2,7 @@ import React from 'react';
 
 function About() {
   return (
-    <section className="about">
+    <section className="about" id="home"> 
       <h1>Cellebes <span>Essecne </span></h1>
       <div className="about-content">
         {/* <img src="/About.jpeg" alt="Vegetables" /> */}

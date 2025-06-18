@@ -1,5 +1,7 @@
+
 .App {
   font-family: 'Montserrat', Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 
 .about {

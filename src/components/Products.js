@@ -30,7 +30,7 @@ function Products() {
   const currentProduct = products[currentSlide];
 
   return (
-    <div className="products-wrapper">
+    <div className="products-wrapper" id="products">
       <div className="text-center mb-10 mt-8 px-4">
         <button className="text-[#ffb300] font-bold text-sm mb-4 inline-block">
           Produk Kami
