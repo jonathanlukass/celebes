@@ -31,7 +31,7 @@ function Contact() {
             href={`tel:${phone.replace(/\s+/g, '')}`}
             className="text-[#FCD200] block mt-1 text-sm hover:underline"
           >
-            {phone}
+            {phone} 
           </p>
         </div>
 
