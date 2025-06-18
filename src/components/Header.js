@@ -2,31 +2,41 @@ import React, { useState, useEffect } from 'react';
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    let lastScroll = 0;
     const handleScroll = () => {
-      const currentScroll = window.pageYOffset;
-      if (currentScroll === 0) {
-        setIsScrolled(false); // Transparent at top
-      } else if (currentScroll > lastScroll) {
-        setIsScrolled(false); // Hide on scroll down
-      } else {
-        setIsScrolled(true); // Show with black bg on scroll up
+      const currentScrollPos = window.pageYOffset;
+
+      // Visible with transparent bg at top
+      if (currentScrollPos === 0) {
+        setIsScrolled(false);
       }
-      lastScroll = currentScroll;
+      // Hide on scroll down
+      else if (currentScrollPos > prevScrollPos) {
+        setIsScrolled(false); // Hide header
+      }
+      // Show with black bg on scroll up
+      else if (currentScrollPos < prevScrollPos) {
+        setIsScrolled(true); // Show header with black bg
+      }
+
+      setPrevScrollPos(currentScrollPos);
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [prevScrollPos]);
 
   return (
     <header
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-black' : 'bg-transparent'
-      } ${isScrolled ? 'opacity-100' : 'opacity-100'}`}
+      className={`fixed w-full z-50 transition-all duration-300 ease-in-out ${
+        isScrolled
+          ? 'bg-black opacity-100 translate-y-0'
+          : 'bg-transparent opacity-100 translate-y-0'
+      } ${!isScrolled && prevScrollPos > 0 ? '-translate-y-full opacity-0' : ''}`}
+      style={{ transitionProperty: 'opacity, transform, background-color' }}
     >
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         {/* Logo */}
