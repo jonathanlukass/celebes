@@ -28,56 +28,92 @@ function Header() {
 
   return (
     <header
-    className={`fixed w-full z-50 transition-all duration-300 ease-in-out ${
+      className={`fixed w-full z-50 transition-all duration-300 ease-in-out ${
         showHeader ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
-    } ${atTop ? 'bg-transparent' : ''}`}
-    style={{
+      } ${atTop ? 'bg-transparent' : ''}`}
+      style={{
         transitionProperty: 'transform, opacity, background-color',
-        backgroundColor: atTop ? 'transparent' : '#0c1c01'
-    }}
+        backgroundColor: atTop ? 'transparent' : '#0c1c01',
+      }}
     >
+      <div className="container mx-auto px-6 py-4 flex items-center justify-between">
+        {/* Logo - aligned left */}
+        <div className="text-white text-xl font-bold">CELEBES ESSENCE🌱</div>
 
-      <div className="container mx-auto px-20 py-4 flex justify-between items-center">
-        {/* Logo */}
-        <div className="text-white text-xl font-bold flex items-center">
-          CELEBES ESSENCE<span className="text-orange-500 ml-1">🌱</span>
-        </div>
-        
-
-        {/* Navigation for Desktop */}
+        {/* Desktop Navigation - centered (hidden on mobile) */}
         <nav className="hidden md:flex space-x-10">
-          <a href="Home" className="text-white hover:text-gray-300">Home</a>
-          <a href="#about" className="text-white hover:text-gray-300">About</a>
-          <a href="#products" className="text-white hover:text-gray-300">Products</a>
-          <a href="#contact" className="text-white hover:text-gray-300">Contact</a>
-          <a href="tel:+6281280080275" className="text-yellow-300 font-bold hover:text-yellow-100">celebes@gmail.com</a>
+          <a href="Home" className="text-white hover:text-gray-300">
+            Home
+          </a>
+          <a href="#about" className="text-white hover:text-gray-300">
+            About
+          </a>
+          <a href="#products" className="text-white hover:text-gray-300">
+            Products
+          </a>
+          <a href="#contact" className="text-white hover:text-gray-300">
+            Contact
+          </a>
+          <a
+            href="tel:+6281280080275"
+            className="text-yellow-300 font-bold hover:text-yellow-100"
+          >
+            celebes@gmail.com
+          </a>
         </nav>
 
-        {/* Burger Menu for Mobile */}
+        {/* Burger Menu - aligned right */}
         <div className="md:hidden">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="text-white focus:outline-none"
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
             </svg>
           </button>
         </div>
-
-        {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="md:hidden absolute top-12 right-4 bg-gray-800 text-white p-4 rounded shadow-lg">
-            <a href="#home" className="block py-2 hover:text-gray-300">Home</a>
-            <a href="#about" className="block py-2 hover:text-gray-300">About</a>
-            <a href="#products" className="block py-2 hover:text-gray-300">Products</a>
-            <a href="#teams" className="block py-2 hover:text-gray-300">Teams</a>
-            <a href="#news" className="block py-2 hover:text-gray-300">News</a>
-            <a href="#contact" className="block py-2 hover:text-gray-300">Contact</a>
-            <a href="tel:+6281280080275" className="block py-2 text-yellow-300 hover:text-yellow-100">celebes@gmail.com</a>
-          </div>
-        )}
       </div>
+
+      {/* Mobile Menu */}
+      {isMenuOpen && (
+        <div className="md:hidden absolute top-16 right-4 bg-gray-800 text-white p-4 rounded shadow-lg z-50">
+          <a href="#home" className="block py-2 hover:text-gray-300">
+            Home
+          </a>
+          <a href="#about" className="block py-2 hover:text-gray-300">
+            About
+          </a>
+          <a href="#products" className="block py-2 hover:text-gray-300">
+            Products
+          </a>
+          <a href="#teams" className="block py-2 hover:text-gray-300">
+            Teams
+          </a>
+          <a href="#news" className="block py-2 hover:text-gray-300">
+            News
+          </a>
+          <a href="#contact" className="block py-2 hover:text-gray-300">
+            Contact
+          </a>
+          <a
+            href="tel:+6281280080275"
+            className="block py-2 text-yellow-300 hover:text-yellow-100"
+          >
+            celebes@gmail.com
+          </a>
+        </div>
+      )}
     </header>
   );
 }
