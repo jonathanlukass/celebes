@@ -82,6 +82,20 @@ function Contact() {
                 />
               </div>
             </a>
+            <a
+              href="https://facebook.com/yourprofile"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Email"
+            >
+              <div className="p-2 rounded-full border border-white inline-block group">
+                <img
+                  src={emailIcon}
+                  alt="Email"
+                  className="w-6 h-6 rounded-full group-hover:filter group-hover:brightness-0 group-hover:invert"
+                />
+              </div>
+            </a>
           </div>
         </div>
       </div>
