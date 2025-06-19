@@ -42,16 +42,15 @@ function Header() {
         <div className="text-white text-xl font-bold flex items-center">
           CELEBES ESSENCE<span className="text-orange-500 ml-1">🌱</span>
         </div>
+        
 
         {/* Navigation for Desktop */}
         <nav className="hidden md:flex space-x-10">
-          <a href="#home" className="text-white hover:text-gray-300">Home</a>
+          <a href="Home" className="text-white hover:text-gray-300">Home</a>
           <a href="#about" className="text-white hover:text-gray-300">About</a>
           <a href="#products" className="text-white hover:text-gray-300">Products</a>
-          <a href="#teams" className="text-white hover:text-gray-300">Teams</a>
-          <a href="#news" className="text-white hover:text-gray-300">News</a>
           <a href="#contact" className="text-white hover:text-gray-300">Contact</a>
-          <a href="tel:+6281280080275" className="text-yellow-300 hover:text-yellow-100">+62 8128 008 0275</a>
+          <a href="tel:+6281280080275" className="text-yellow-300 font-bold hover:text-yellow-100">celebes@gmail.com</a>
         </nav>
 
         {/* Burger Menu for Mobile */}
@@ -75,7 +74,7 @@ function Header() {
             <a href="#teams" className="block py-2 hover:text-gray-300">Teams</a>
             <a href="#news" className="block py-2 hover:text-gray-300">News</a>
             <a href="#contact" className="block py-2 hover:text-gray-300">Contact</a>
-            <a href="tel:+6281280080275" className="block py-2 text-yellow-300 hover:text-yellow-100">+62 8128 008 0275</a>
+            <a href="tel:+6281280080275" className="block py-2 text-yellow-300 hover:text-yellow-100">celebes@gmail.com</a>
           </div>
         )}
       </div>
