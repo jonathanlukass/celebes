@@ -39,7 +39,7 @@ function Header() {
 
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo - aligned left */}
-        <div className="text-white text-2xl">Celebes<span className='text-[#ffb300] font-bold italic'>Essence</span></div>
+        <div className="text-white text-2xl">Celebes<span className='text-[#ffb300] font-bold italic'> Essence</span></div>
 
         {/* Desktop Navigation - centered (hidden on mobile) */}
         <nav className="hidden md:flex space-x-10">
@@ -88,13 +88,7 @@ function Header() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div
-          className="md:hidden absolute top-16 right-1 text-white p-4 rounded shadow-lg z-50 bg-gray-800"
-          style={{
-            background: 'rgba(1, 23, 3, 0.7)', // semi-transparent bg-gray-800
-            backdropFilter: 'blur(10px)',
-          }}
-        >
+ <div className="md:hidden absolute top-16 right-4 bg-gray-800 text-white p-4 rounded shadow-lg z-50">
           <a href="#home" className="block py-2 hover:text-gray-300">
             Beranda
           </a>

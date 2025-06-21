@@ -31,7 +31,7 @@ function AboutUs() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
-            "Rempah Sulawesi untuk Dunia – Inilah Celebes Essence",
+            "Rempah Sulawesi untuk Dunia – Inilah Celebes Essence.",
             "Celebes Essence menjamin keaslian, mutu, dan keberlanjutan. Produk kami cocok untuk kebutuhan industri makanan, kesehatan, dan kosmetik.",
             "Setiap biji pala kami diproses dengan standar ketat, mulai dari panen hingga pengemasan, untuk menjaga aroma, rasa, dan kandungan alami tetap terjaga.",
           ].map((text, index) => (

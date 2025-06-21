@@ -8,7 +8,8 @@ function Contact() {
     'Jl. Gn. Panjang Singkil Dua, Kec. Singkil, Kota Manado, Sulawesi Utara';
 
   const phone = '+62 853-9731-3198';
-  const currentYear = '2025';
+  const email = 'cvdjayasumberkasih@gmail.com';
+  const currentYear = '2005';
 
   const phoneNumber = '+6285397313198'; // Replace with your WhatsApp number
   const message = 'Halo, saya tertarik dengan produk Anda!'; // Default message
@@ -25,7 +26,7 @@ function Contact() {
         <div className="lg:col-span-2">
           <p className="text-white text-3xl font-thin mb-2 whitespace-nowrap">
             Celebes
-            <span className="font-bold text-[#ffb300] italic">Essence</span>
+            <span className="font-bold text-[#ffb300] italic"> Essence</span>
           </p>
           <p className="text-[#919191] font-thin text-sm leading-relaxed max-w-sm">
             Pala Pilihan dari Sulawesi Asli, Berkualitas, Tak Tertandingi!
@@ -37,50 +38,25 @@ function Contact() {
           <address className="not-italic text-[#919191] font-thin text-sm mb-2">
             {address}
           </address>
-
         </div>
-
-
 
         <div className="">
           <p className="text-white text-xl mb-3">Hubungi Kami</p>
-          <div className="flex gap-4">
-          <a
-            href={whatsappUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[#FCD200] block mt-1 text-sm hover:underline"
-          >
-            {phone}
-          </a>
-            {/* <a
-              href="https://instagram.com/yourprofile"
+          <div className="flex flex-col gap-1">
+            <a
+              href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Instagram"
+              className="text-[#FCD200] block mt-1 text-sm hover:underline"
             >
-              <div className="p-2 rounded-full border border-white inline-block hover:bg-black transition-colors duration-200 group">
-                <img
-                  src={instagramIcon}
-                  alt="Instagram"
-                  className="w-6 h-6 rounded-full group-hover:filter group-hover:brightness-0 group-hover:invert"
-                />
-              </div>
+              {phone}
             </a>
             <a
-              href="https://facebook.com/yourprofile"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
+              href={`mailto:${email}`}
+              className="text-[#FCD200] block mt-1 text-sm hover:underline"
             >
-              <div className="p-2 rounded-full border border-white inline-block hover:bg-black transition-colors duration-200 group">
-                <img
-                  src={facebookIcon}
-                  alt="Facebook"
-                  className="w-6 h-6 rounded-full group-hover:filter group-hover:brightness-0 group-hover:invert"
-                />
-              </div>
-            </a> */}
+              {email}
+            </a>
           </div>
         </div>
       </div>
