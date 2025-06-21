@@ -29,19 +29,19 @@ function Contact() {
             <span className="font-bold text-[#ffb300] italic"> Essence</span>
           </p>
           <p className="text-[#919191] font-thin text-sm leading-relaxed max-w-sm">
-            Pala Pilihan dari Sulawesi Asli, Berkualitas, Tak Tertandingi!
+          Selected Nutmeg from North Sulawesi – Authentic, Premium, Unmatched!
           </p>
         </div>
 
         <div className="">
-          <p className="text-white text-xl mb-3">Alamat</p>
+          <p className="text-white text-xl mb-3">Address</p>
           <address className="not-italic text-[#919191] font-thin text-sm mb-2">
             {address}
           </address>
         </div>
 
         <div className="">
-          <p className="text-white text-xl mb-3">Hubungi Kami</p>
+          <p className="text-white text-xl mb-3">Contact Us</p>
           <div className="flex flex-col gap-1">
             <a
               href={whatsappUrl}

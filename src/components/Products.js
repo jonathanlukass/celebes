@@ -6,16 +6,16 @@ function Products() {
 
   const products = [
     {
-      title: 'Fuli Pala - Penambah Cita Rasa',
+      title: 'Nutmeg Mace – Flavor Enhancer',
       image: '/product1.jpg',
       description:
-        'Fuli Pala, selaput tipis yang mengelilingi biji pala, meningkatkan cita rasa masakan dengan aroma hangatnya. Rempah ini memperkaya hidangan seperti sup, saus, dan kue, memberikan sentuhan manis dan pedas yang khas. Fleksibilitasnya menjadikannya bahan penting dalam resep gurih maupun manis, memikat lidah setiap penikmatnya.',
+        'Nutmeg mace, the delicate membrane that surrounds the nutmeg seed, enhances the flavor of dishes with its warm aroma. This spice enriches meals such as soups, sauces, and pastries, delivering a distinctive sweet and spicy touch. Its versatility makes it an essential ingredient in both savory and sweet recipes, delighting the palate of every enthusiast.',
     },
     {
-      title: 'Fuli Pala - Manfaat Kesehatan',
+      title: 'Nutmeg Mace – Health Benefits',
       image: '/product2.jpg',
       description:
-        'Fuli Pala menawarkan berbagai manfaat kesehatan, menjadikannya tambahan berharga dalam pola makan Anda. Kaya akan antioksidan, rempah ini membantu melawan peradangan dan mendukung kesehatan pencernaan. Sifatnya yang menghangatkan dapat meningkatkan sirkulasi dan meredakan nyeri ringan, sementara aroma khasnya mendukung relaksasi dan kesejahteraan secara keseluruhan.',
+        'Nutmeg mace offers various health benefits, making it a valuable addition to your diet. Rich in antioxidants, this spice helps fight inflammation and supports digestive health. Its warming properties can boost circulation and relieve minor aches, while its signature aroma promotes relaxation and overall well-being.',
     },
   ];
 
@@ -33,13 +33,13 @@ function Products() {
     <div className="products-wrapper" id="products">
       <div className="text-center mb-10 mt-8 px-4">
         <button className="text-[#ffb300] text-lg mb-4 inline-block">
-          Produk Kami
+          Our Product
         </button>
         <h1 className="text-3xl font-bold text-gray-800 mt-2">
-          Fuli Pala (Mace) Esensi Celebes
+          Celebes Essence Nutmeg Mace (Fuli Pala)
         </h1>
         <p className="text-gray-600 mt-4 max-w-2xl mx-auto text-justify">
-          <b>Fuli pala</b> adalah selaput tipis berwarna merah atau jingga yang menyelimuti biji pala. Fuli pala digunakan sebagai rempah-rempah bernilai tinggi karena aroma dan rasanya yang khas.
+          <b>Nutmeg mace</b> is the thin, red or orange membrane that envelops the nutmeg seed. It is used as a high-value spice due to its distinctive aroma and flavor.
         </p>
       </div>
       <div className="product-container">

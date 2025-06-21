@@ -44,16 +44,16 @@ function Header() {
         {/* Desktop Navigation - centered (hidden on mobile) */}
         <nav className="hidden md:flex space-x-10">
           <a href="Home" className="text-white hover:text-gray-300">
-            Beranda
+            Home
           </a>
           <a href="#about" className="text-white hover:text-gray-300">
-            Tentang Kami
+            About Us
           </a>
           <a href="#products" className="text-white hover:text-gray-300">
-            Produk
+            product
           </a>
           <a href="#contact" className="text-white hover:text-gray-300">
-            Hubungi
+            Contact
           </a>
           <a
             href="tel:+6281280080275"
@@ -90,16 +90,16 @@ function Header() {
       {isMenuOpen && (
  <div className="md:hidden absolute top-16 right-4 bg-gray-800 text-white p-4 rounded shadow-lg z-50">
           <a href="#home" className="block py-2 hover:text-gray-300">
-            Beranda
+            Home
           </a>
           <a href="#about" className="block py-2 hover:text-gray-300">
-            Tentang Kami
+            About Us
           </a>
           <a href="#products" className="block py-2 hover:text-gray-300">
-            Produk
+            Product
           </a>
           <a href="#contact" className="block py-2 hover:text-gray-300">
-            Hubungi
+            Contact
           </a>
           <a
             href="tel:+6281280080275"

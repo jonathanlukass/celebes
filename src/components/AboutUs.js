@@ -16,24 +16,23 @@ function AboutUs() {
 
           <div className="text-center mb-10 mt-4">
             <button className="text-[#ffb300] text-lg mb-4 inline-block">
-              Tentang Kami
+              About Us
             </button>
             <h1 className="text-2xl font-bold text-gray-800 mt-2">
-              Menghadirkan Kualitas Pala Premium dari Sulawesi ke Dunia
+            Delivering Premium Nutmeg Quality from North Sulawesi to the World
             </h1>
             <p className="text-gray-600 mt-4 text-justify center">
-              <span className="font-bold">Celebes Essence</span> adalah perusahaan yang bergerak di bidang pengolahan dan distribusi pala yang berasal dari tanah subur Sulawesi, Indonesia. Berawal dari usaha kecil yang penuh semangat, Celebes Essence telah tumbuh dan berkembang selama lebih dari 20 tahun menjadi pelaku usaha yang mengedepankan kualitas, keberlanjutan, dan kepercayaan—baik dalam proses produksi maupun dalam menjalin hubungan dengan mitra dan konsumen.
-              <br />
-              <br />
-              Dengan memanfaatkan potensi alam Indonesia dan dukungan petani lokal, Celebes Essence berkomitmen untuk menghasilkan produk pala yang tidak hanya unggul dari segi rasa dan aroma, tetapi juga memenuhi standar internasional.
+              <span className="font-bold">Celebes Essence</span> is a company engaged in the processing and distribution of nutmeg sourced from the fertile lands of Sulawesi, Indonesia. Starting as a passionate small business, Celebes Essence has grown and thrived for over 20 years, prioritizing quality, sustainability, and trust—both in our production processes and our relationships with partners and consumers.
+
+              By utilizing Indonesia’s natural potential and the support of local farmers, Celebes Essence is committed to delivering nutmeg products that not only excel in taste and aroma but also meet international standards.
             </p>
           </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
-            "Rempah Sulawesi untuk Dunia – Inilah Celebes Essence.",
-            "Celebes Essence menjamin keaslian, mutu, dan keberlanjutan. Produk kami cocok untuk kebutuhan industri makanan, kesehatan, dan kosmetik.",
-            "Setiap biji pala kami diproses dengan standar ketat, mulai dari panen hingga pengemasan, untuk menjaga aroma, rasa, dan kandungan alami tetap terjaga.",
+            "Spices of North Sulawesi for the World – This is Celebes Essence. – Inilah Celebes Essence.",
+            "Celebes Essence guarantees authenticity, quality, and sustainability. Our products are ideal for the food, health, and cosmetic industries.",
+            "Each nutmeg seed is processed under strict standards—from harvesting to packaging—to preserve its natural aroma, flavor, and properties.",
           ].map((text, index) => (
             <div
               key={index}

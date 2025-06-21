@@ -7,7 +7,7 @@ function About() {
         Celebes<span> Essence </span>
       </h1>
       <div className="about-content">
-        <p>Pala Pilihan dari Sulawesi<br />Asli, Berkualitas, Tak Tertandingi!</p>
+        <p>Selected Nutmeg from North Sulawesi<br />Authentic, Premium, Unmatched!</p>
       </div>
     </section>
   );
