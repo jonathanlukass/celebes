@@ -55,7 +55,15 @@
   }
 }
 
+.map-section {
+  width: 100%;
+  padding: 20px 0;
+}
 
+.map-container {
+  max-width: 100%;
+  overflow: hidden;
+}
 
 .carousel-container {
   position: relative;

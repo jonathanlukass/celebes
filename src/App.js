@@ -6,6 +6,7 @@ import AboutUs from './components/AboutUs';
 import Products from './components/Products';
 import Contact from './components/Contact';
 import WhatsAppButton from './components/WhatsAppButton';
+import Map from './components/Map';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <About />
       <AboutUs />
       <Products />
+      {/* <Map /> */}
       <Contact />
       <WhatsAppButton />
     </div>
