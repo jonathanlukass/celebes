@@ -30,7 +30,7 @@ function AboutUs() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
-            "Spices of North Sulawesi for the World – This is Celebes Essence. – Inilah Celebes Essence.",
+            "Spices of North Sulawesi for the World – This is Celebes Essence.",
             "Celebes Essence guarantees authenticity, quality, and sustainability. Our products are ideal for the food, health, and cosmetic industries.",
             "Each nutmeg seed is processed under strict standards—from harvesting to packaging—to preserve its natural aroma, flavor, and properties.",
           ].map((text, index) => (
