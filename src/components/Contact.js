@@ -3,7 +3,7 @@ import instagramIcon from '../icons/icons8-instagram1.svg';
 import facebookIcon from '../icons/icons8-facebook.svg';
 
 function Contact() {
-  const menuItems = ['Home', 'About', 'Products', 'Contact'];
+  const menuItems = ['Beranda', 'Tentang Kami', 'Produk', 'Hubungi'];
   const address =
     'Jl. Indonesia Raya No.45, Jakarta Pusat, DKI Jakarta, Indonesia';
   const phone = '+62 853-9731-3198';
@@ -32,7 +32,7 @@ function Contact() {
         </div>
 
         <div className="">
-          <p className="text-white text-xl mb-3">Address</p>
+          <p className="text-white text-xl mb-3">Alamat</p>
           <address className="not-italic text-[#919191] font-thin text-sm mb-2">
             {address}
           </address>
@@ -63,7 +63,7 @@ function Contact() {
         </div>
 
         <div className="">
-          <p className="text-white text-xl mb-3">Get in Touch</p>
+          <p className="text-white text-xl mb-3">Hubungi Kami</p>
           <div className="flex gap-4">
             <a
               href="https://instagram.com/yourprofile"
