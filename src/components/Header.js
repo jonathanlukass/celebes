@@ -38,21 +38,21 @@ function Header() {
     >
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo - aligned left */}
-        <div className="text-white text-xl font-bold">CELEBES ESSENCE🌱</div>
+        <div className="text-white text-2xl">Celebes<span className='text-[#ffb300] font-bold italic'>Essence</span>🌱</div>
 
         {/* Desktop Navigation - centered (hidden on mobile) */}
         <nav className="hidden md:flex space-x-10">
           <a href="Home" className="text-white hover:text-gray-300">
-            Home
+            Beranda
           </a>
           <a href="#about" className="text-white hover:text-gray-300">
-            About
+            Tentang Kami
           </a>
           <a href="#products" className="text-white hover:text-gray-300">
-            Products
+            Produk
           </a>
           <a href="#contact" className="text-white hover:text-gray-300">
-            Contact
+            Hubungi
           </a>
           <a
             href="tel:+6281280080275"
@@ -89,22 +89,16 @@ function Header() {
       {isMenuOpen && (
         <div className="md:hidden absolute top-16 right-4 bg-gray-800 text-white p-4 rounded shadow-lg z-50">
           <a href="#home" className="block py-2 hover:text-gray-300">
-            Home
+            Beranda
           </a>
           <a href="#about" className="block py-2 hover:text-gray-300">
-            About
+            Tentang Kami
           </a>
           <a href="#products" className="block py-2 hover:text-gray-300">
-            Products
-          </a>
-          <a href="#teams" className="block py-2 hover:text-gray-300">
-            Teams
-          </a>
-          <a href="#news" className="block py-2 hover:text-gray-300">
-            News
+            Produk
           </a>
           <a href="#contact" className="block py-2 hover:text-gray-300">
-            Contact
+            Hubungi
           </a>
           <a
             href="tel:+6281280080275"

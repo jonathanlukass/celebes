@@ -15,14 +15,14 @@ function AboutUs() {
       <div className="max-w-screen-2xl mx-auto">
 
           <div className="text-center mb-10 mt-4">
-            <button className="text-[#ffb300] font-bold text-sm mb-4 inline-block">
-              ABOUT US
+            <button className="text-[#ffb300] text-lg mb-4 inline-block">
+              Tentang Kami
             </button>
             <h1 className="text-2xl font-bold text-gray-800 mt-2">
               Menghadirkan Kualitas Pala Premium dari Sulawesi ke Dunia
             </h1>
             <p className="text-gray-600 mt-4 text-justify center">
-              Celebes Essence adalah perusahaan yang bergerak di bidang pengolahan dan distribusi pala yang berasal dari tanah subur Sulawesi, Indonesia. Kami hadir sebagai pelaku usaha yang mengedepankan kualitas, keberlanjutan, dan kepercayaan, baik dalam proses produksi maupun dalam menjalin hubungan dengan mitra dan konsumen. Dengan memanfaatkan potensi alam Indonesia dan dukungan petani lokal, Celebes Essence berkomitmen untuk menghasilkan produk pala yang tidak hanya unggul dari segi rasa dan aroma, tetapi juga memenuhi standar internasional.
+              <span className="font-bold">Celebes Essence</span> adalah perusahaan yang bergerak di bidang pengolahan dan distribusi pala yang berasal dari tanah subur Sulawesi, Indonesia. Kami hadir sebagai pelaku usaha yang mengedepankan kualitas, keberlanjutan, dan kepercayaan, baik dalam proses produksi maupun dalam menjalin hubungan dengan mitra dan konsumen. Dengan memanfaatkan potensi alam Indonesia dan dukungan petani lokal, Celebes Essence berkomitmen untuk menghasilkan produk pala yang tidak hanya unggul dari segi rasa dan aroma, tetapi juga memenuhi standar internasional.
             </p>
           </div>
 

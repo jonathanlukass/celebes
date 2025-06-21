@@ -32,7 +32,7 @@ function Products() {
   return (
     <div className="products-wrapper" id="products">
       <div className="text-center mb-10 mt-8 px-4">
-        <button className="text-[#ffb300] font-bold text-sm mb-4 inline-block">
+        <button className="text-[#ffb300] text-lg mb-4 inline-block">
           Produk Kami
         </button>
         <h1 className="text-3xl font-bold text-gray-800 mt-2">
