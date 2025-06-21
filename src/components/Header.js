@@ -27,18 +27,19 @@ function Header() {
   }, [prevScrollPos]);
 
   return (
-    <header
-      className={`fixed w-full z-50 transition-all duration-300 ease-in-out ${
-        showHeader ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
-      } ${atTop ? 'bg-transparent' : ''}`}
-      style={{
-        transitionProperty: 'transform, opacity, background-color',
-        backgroundColor: atTop ? 'transparent' : '#0c1c01',
-      }}
-    >
+<header
+    className={`fixed w-full z-50 transition-all duration-300 ease-in-out border-b ${
+      showHeader ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
+    } ${atTop ? 'bg-transparent border-white/10' : 'bg-[#0c1c01] border-[#0c1c01]'}`}
+    style={{
+      transitionProperty: 'transform, opacity, background-color, border-color',
+      backdropFilter: 'blur(2px)', // efek kaca buram, opsional
+    }}
+  >
+
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo - aligned left */}
-        <div className="text-white text-2xl">Celebes<span className='text-[#ffb300] font-bold italic'>Essence</span>🌱</div>
+        <div className="text-white text-2xl">Celebes<span className='text-[#ffb300] font-bold italic'>Essence</span></div>
 
         {/* Desktop Navigation - centered (hidden on mobile) */}
         <nav className="hidden md:flex space-x-10">
@@ -58,7 +59,7 @@ function Header() {
             href="tel:+6281280080275"
             className="text-yellow-300 font-bold hover:text-yellow-100"
           >
-            celebes@gmail.com
+            cvdjayasumberkasih@gmail.com
           </a>
         </nav>
 
@@ -87,7 +88,13 @@ function Header() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden absolute top-16 right-4 bg-gray-800 text-white p-4 rounded shadow-lg z-50">
+        <div
+          className="md:hidden absolute top-16 right-1 text-white p-4 rounded shadow-lg z-50 bg-gray-800"
+          style={{
+            background: 'rgba(1, 23, 3, 0.7)', // semi-transparent bg-gray-800
+            backdropFilter: 'blur(10px)',
+          }}
+        >
           <a href="#home" className="block py-2 hover:text-gray-300">
             Beranda
           </a>
@@ -104,7 +111,7 @@ function Header() {
             href="tel:+6281280080275"
             className="block py-2 text-yellow-300 hover:text-yellow-100"
           >
-            celebes@gmail.com
+            cvdjayasumberkasih@gmail.com
           </a>
         </div>
       )}
