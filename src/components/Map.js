@@ -15,7 +15,7 @@ const greenIcon = new L.Icon({
 
 const Map = () => {
   // Koordinat (Manado, Sulawesi Utara)
-  const position = [1.5043694, 124.8572111];
+  const position = [1.506084, 124.856114];
 
   return (
     <MapContainer
@@ -24,15 +24,21 @@ const Map = () => {
       style={{ height: '280px', width: '100%' }}
       scrollWheelZoom={false}
     >
-      {/* TileLayer untuk OpenStreetMap */}
       <TileLayer
-        attribution='© <a href="https://www.openstreetmap.org/copyright">Celebes Essence</a>'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      {/* Marker dengan ikon hijau */}
+
       <Marker position={position} icon={greenIcon}>
         <Popup>
-          Lokasi Kami <br /> Jl. Gn. Panjang Singkil Dua, Kec. Singkil, Kota Manado, Sulawesi Utara
+          Lokasi Kami <br />
+          Jl. Gn. Panjang Singkil Dua, Kec. Singkil, Kota Manado, Sulawesi Utara <br />
+          <a
+            href="https://maps.app.goo.gl/rs6xtQQyub4r3U2n7?g_st=com.google.maps.preview.copy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Lihat di Google Maps
+          </a>
         </Popup>
       </Marker>
     </MapContainer>
