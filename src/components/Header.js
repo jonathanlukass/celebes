@@ -50,7 +50,7 @@ function Header() {
             About Us
           </a>
           <a href="#products" className="text-white hover:text-gray-300">
-            product
+            Product
           </a>
           <a href="#contact" className="text-white hover:text-gray-300">
             Contact
