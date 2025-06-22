@@ -3,17 +3,19 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
-// Perbaiki ikon marker default Leaflet (kadang bermasalah di React)
-delete L.Icon.Default.prototype._getIconUrl;
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
-  iconUrl: require('leaflet/dist/images/marker-icon.png'),
-  shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
+// Definisikan ikon marker hijau
+const greenIcon = new L.Icon({
+  iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41],
 });
 
 const Map = () => {
-  // Koordinat default (misalnya: Jakarta, Indonesia)
-  const position = [1.5043694, 124.8572111 ];
+  // Koordinat (Manado, Sulawesi Utara)
+  const position = [1.5043694, 124.8572111];
 
   return (
     <MapContainer
@@ -24,11 +26,11 @@ const Map = () => {
     >
       {/* TileLayer untuk OpenStreetMap */}
       <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">Celebes </a> Essence'
+        attribution='© <a href="https://www.openstreetmap.org/copyright">Celebes Essence</a>'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      {/* Marker dengan Popup */}
-      <Marker position={position}>
+      {/* Marker dengan ikon hijau */}
+      <Marker position={position} icon={greenIcon}>
         <Popup>
           Lokasi Kami <br /> Jl. Gn. Panjang Singkil Dua, Kec. Singkil, Kota Manado, Sulawesi Utara
         </Popup>
