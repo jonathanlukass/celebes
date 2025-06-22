@@ -27,19 +27,26 @@ function Header() {
   }, [prevScrollPos]);
 
   return (
-<header
-    className={`fixed w-full z-50 transition-all duration-300 ease-in-out border-b ${
-      showHeader ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
-    } ${atTop ? 'bg-transparent border-white/10' : 'bg-[#0c1c01] border-[#0c1c01]'}`}
-    style={{
-      transitionProperty: 'transform, opacity, background-color, border-color',
-      backdropFilter: 'blur(2px)', // efek kaca buram, opsional
-    }}
-  >
-
+    <header
+      className={`fixed w-full z-50 transition-all duration-300 ease-in-out border-b ${
+        showHeader ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
+      } ${
+        atTop
+          ? 'bg-transparent border-white/10'
+          : 'bg-[#0c1c01] border-[#0c1c01]'
+      }`}
+      style={{
+        transitionProperty:
+          'transform, opacity, background-color, border-color',
+        backdropFilter: 'blur(2px)', // efek kaca buram, opsional
+      }}
+    >
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo - aligned left */}
-        <div className="text-white text-2xl">Celebes<span className='text-[#ffb300] font-bold italic'> Essence</span></div>
+        <div className="text-white text-2xl">
+          Celebes
+          <span className="text-[#ffb300] font-bold italic"> Essence</span>
+        </div>
 
         {/* Desktop Navigation - centered (hidden on mobile) */}
         <nav className="hidden md:flex space-x-10">
@@ -56,7 +63,7 @@ function Header() {
             Contact
           </a>
           <a
-            href="tel:+6281280080275"
+            href="mailto:cvdjayasumberkasih@gmail.com"
             className="text-yellow-300 font-bold hover:text-yellow-100"
           >
             cvdjayasumberkasih@gmail.com
@@ -88,7 +95,7 @@ function Header() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
- <div className="md:hidden absolute top-16 right-4 bg-gray-800 text-white p-4 rounded shadow-lg z-50">
+        <div className="md:hidden absolute top-16 right-4 bg-gray-800 text-white p-4 rounded shadow-lg z-50">
           <a href="#home" className="block py-2 hover:text-gray-300">
             Home
           </a>
@@ -102,7 +109,7 @@ function Header() {
             Contact
           </a>
           <a
-            href="tel:+6281280080275"
+            href="mailto:cvdjayasumberkasih@gmail.com"
             className="block py-2 text-yellow-300 hover:text-yellow-100"
           >
             cvdjayasumberkasih@gmail.com
