@@ -15,7 +15,7 @@ function App() {
       <About />
       <AboutUs />
       <Products />
-      <Map />
+      {/* <Map /> */}
       <Contact />
       <WhatsAppButton />
     </div>
