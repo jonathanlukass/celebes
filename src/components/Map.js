@@ -1,16 +1,39 @@
 import React from 'react';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
+import L from 'leaflet';
+
+// Perbaiki ikon marker default Leaflet (kadang bermasalah di React)
+delete L.Icon.Default.prototype._getIconUrl;
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
+  iconUrl: require('leaflet/dist/images/marker-icon.png'),
+  shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
+});
 
 const Map = () => {
+  // Koordinat default (misalnya: Jakarta, Indonesia)
+  const position = [1.5043694, 124.8572111 ];
+
   return (
-    <div className="map-section w-full">
-      <div className="map-container">
-        <img
-          src="https://maps.googleapis.com/maps/api/staticmap?center=-6.175392,106.827153&zoom=14&size=600x400&maptype=roadmap&markers=color:red%7C-6.175392,106.827153&key=YOUR_API_KEY"
-          alt="Monas Location Map"
-          className="w-full h-auto"
-        />
-      </div>
-    </div>
+    <MapContainer
+      center={position}
+      zoom={13}
+      style={{ height: '280px', width: '100%' }}
+      scrollWheelZoom={false}
+    >
+      {/* TileLayer untuk OpenStreetMap */}
+      <TileLayer
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">Celebes </a> Essence'
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      />
+      {/* Marker dengan Popup */}
+      <Marker position={position}>
+        <Popup>
+          Lokasi Kami <br /> Jl. Gn. Panjang Singkil Dua, Kec. Singkil, Kota Manado, Sulawesi Utara
+        </Popup>
+      </Marker>
+    </MapContainer>
   );
 };
 

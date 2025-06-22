@@ -3,7 +3,6 @@
 // import facebookIcon from '../icons/icons8-facebook.svg';
 
 function Contact() {
-  const menuItems = ['Beranda', 'Tentang Kami', 'Produk', 'Hubungi'];
   const address =
     'Jl. Gn. Panjang Singkil Dua, Kec. Singkil, Kota Manado, Sulawesi Utara';
 
