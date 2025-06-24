@@ -101,7 +101,8 @@ function Header() {
           </a>
           <a href="#about" className="block py-2 hover:text-gray-300">
             About Us
-          </a>
+          </a
+          
           <a href="#products" className="block py-2 hover:text-gray-300">
             Product
           </a>
