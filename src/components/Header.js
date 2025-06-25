@@ -49,7 +49,7 @@ function Header() {
         </div>
 
         {/* Desktop Navigation - centered (hidden on mobile) */}
-        <nav className="hidden md:flex space-x-10">
+        <nav className="hidden lg:flex space-x-10">
           <a href="Home" className="text-white hover:text-gray-300">
             Home
           </a>
@@ -71,7 +71,7 @@ function Header() {
         </nav>
 
         {/* Burger Menu - aligned right */}
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="text-white focus:outline-none"
@@ -95,7 +95,7 @@ function Header() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden absolute top-16 right-4 bg-gray-800 text-white p-4 rounded shadow-lg z-50">
+        <div className="lg:hidden absolute top-16 right-4 bg-gray-800 text-white p-4 rounded shadow-lg z-50">
           <a href="#home" className="block py-2 hover:text-gray-300">
             Home
           </a>
