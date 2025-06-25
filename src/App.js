@@ -7,7 +7,7 @@ import Products from './components/Products';
 import Contact from './components/Contact';
 import WhatsAppButton from './components/WhatsAppButton';
 import Map from './components/Map';
-import OurJourney from './components/OurJourney';
+// import OurJourney from './components/OurJourney';
 import Header from './components/Header';
 
 function App() {
@@ -16,9 +16,9 @@ function App() {
       <Header />
       <About />
       <AboutUs />
-      <OurJourney />
+      {/* <OurJourney /> */}
       <Products />
-      
+
       <WhatsAppButton />
       <Map />
       <Contact />
