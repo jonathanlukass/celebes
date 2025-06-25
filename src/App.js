@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import WhatsAppButton from './components/WhatsAppButton';
 import Map from './components/Map';
 import OurJourney from './components/OurJourney';
+import Header from './components/Header';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
       <Header />
       <About />
       <AboutUs />
-      {/* <OurJourney /> */}
+      <OurJourney />
       <Products />
       
       <WhatsAppButton />
