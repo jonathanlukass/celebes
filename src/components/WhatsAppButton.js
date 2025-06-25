@@ -3,7 +3,7 @@ import social from '../assets/social.png'; // Import the downloaded logo
 
 function WhatsAppButton() {
   const phoneNumber = '+6285397313198'; // Replace with your WhatsApp number
-  const message = 'Halo, saya tertarik dengan produk Anda!'; // Default message
+  const message = 'Hello, I am interested in your product!'; // Default message
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
