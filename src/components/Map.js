@@ -30,14 +30,14 @@ const Map = () => {
 
       <Marker position={position} icon={greenIcon}>
         <Popup>
-          Lokasi Kami <br />
+          Our Location <br />
           Jl. Gn. Panjang Singkil Dua, Kec. Singkil, Kota Manado, Sulawesi Utara <br />
           <a
             href="https://maps.app.goo.gl/rs6xtQQyub4r3U2n7?g_st=com.google.maps.preview.copy"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Lihat di Google Maps
+            See on Google Maps
           </a>
         </Popup>
       </Marker>
