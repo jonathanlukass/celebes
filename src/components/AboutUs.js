@@ -15,10 +15,10 @@ function AboutUs() {
       <div className="max-w-screen-2xl mx-auto">
 
           <div className="text-center mb-10 mt-4">
-            <button className="text-[#ffb300] text-lg mb-4 inline-block">
+            <button className="text-[#ffb300] text-lg mb-0 inline-block text-xl">
               About Us
             </button>
-            <h1 className="text-2xl font-bold text-gray-800 mt-2">
+            <h1 className="text-3xl font-bold text-gray-800 mt-2">
             Delivering Premium Nutmeg Quality from North Sulawesi to the World
             </h1>
             <p className="text-gray-600 mt-4 text-justify center">

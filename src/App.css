@@ -32,7 +32,7 @@
 .about p {
   font-size: clamp(1rem, 3vw, 1.2rem);
   /* tetap responsif, tapi lebih kecil dari h1 */
-  max-width: 90%;
+  max-width:60%;
   margin: 0 auto;
   line-height: 1.6;
   padding: 0 10px;
