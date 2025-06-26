@@ -8,7 +8,7 @@ function Contact() {
 
   const phone = '+62 853-9731-3198';
   const email = 'cvdjayasumberkasih@gmail.com';
-  const currentYear = '2005';
+  const currentYear = new Date().getFullYear();
 
   const phoneNumber = '+6285397313198'; // Replace with your WhatsApp number
   const message = 'Halo, saya tertarik dengan produk Anda!'; // Default message
@@ -28,7 +28,7 @@ function Contact() {
             <span className="font-bold text-[#ffb300] italic"> Essence</span>
           </p>
           <p className="text-[#919191] font-thin text-sm leading-relaxed max-w-sm">
-          Selected Nutmeg from North Sulawesi – Authentic, Premium, Unmatched!
+            Selected Nutmeg from North Sulawesi – Authentic, Premium, Unmatched!
           </p>
         </div>
 
